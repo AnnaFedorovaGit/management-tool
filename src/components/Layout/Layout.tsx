@@ -2,7 +2,7 @@
 // import UserMenu from 'components/UserMenu/UserMenu';
 import LoginPage from "../../pages/LoginPage/LoginPage";
 
-// import css from './Layout.module.scss';
+import scss from './Layout.module.scss';
 
 
 const Layout = () => {
@@ -13,7 +13,9 @@ const Layout = () => {
                 {/* <div className={css.backgroundImage}></div> */}
             {/* </header> */}
             <main>
-                <LoginPage />
+                <div className={scss.wrapper}>
+                    <LoginPage/>
+                </div>
                 {/* <Outlet/> */}
             </main>
         </>
